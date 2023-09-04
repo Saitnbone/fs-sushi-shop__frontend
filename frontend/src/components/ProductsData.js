@@ -122,14 +122,14 @@ const Products = [
     {
     id: 16,
     img: "images/shaverma-boul-medium-rectangular-8d9faa4aa96f4815801d480c9790ce3f.jpeg",
-    title: "Shaverma Bowl",
+    title: "Shaverma_Bowl",
     category: "Poke",
     price: 12,
     compound: "Chicken, Idaho potatoes, tomatoes, cucumber, Chinese cabbage, pickled red onion (red onion, vinegar, sugar, dill), shawarma sauce (sour cream, mayonnaise, fresh garlic, spices).",
     },
     {
     id: 17,
-    img: "images/Second set.jpg",
+    img: "images/Second_set.jpg",
     title: "Daily Set",
     category: "Sets",
     price: 50,
@@ -137,7 +137,7 @@ const Products = [
     },
     {
     id: 18,
-    img: "images/Third set.jpg",
+    img: "images/Third_set.jpg",
     title: "Solomoon",
     category: "Sets",
     price: 60,
@@ -145,7 +145,7 @@ const Products = [
     },
     {
     id: 19,
-    img: "images/Fourth set.jpg",
+    img: "images/Fourth_set.jpg",
     title: "Feast of Taste",
     category: "Sets",
     price: 80,
@@ -153,7 +153,7 @@ const Products = [
     },
     {
     id: 20,
-    img: "images/Fifth set.jpg",
+    img: "images/Fifth_set.jpg",
     title: "Fusion",
     category: "Sets",
     price: 30,
@@ -161,7 +161,7 @@ const Products = [
     },
     {
     id: 21,
-    img: "images/sixth set.jpg",
+    img: "images/sixth_set.jpg",
     title: "Unagi Set",
     category: "Sets",
     price: 29,
@@ -169,7 +169,7 @@ const Products = [
     },
     {
     id: 22,
-    img: "images/seventh set.jpg",
+    img: "images/seventh_set.jpg",
     title: "Discover",
     category: "Sets",
     price: 25,
@@ -177,7 +177,7 @@ const Products = [
     },
     {
     id: 23,
-    img: "images/Eight set.jpg",
+    img: "images/Eight_set.jpg",
     title: "Perfect Mix",
     category: "Sets",
     price: 22,
@@ -185,7 +185,7 @@ const Products = [
     },
     {
     id: 24,
-    img: "images/Ninth set.jpg",
+    img: "images/Ninth_set.jpg",
     title: "Lover",
     category: "Sets",
     price: 19,
@@ -233,7 +233,7 @@ const Products = [
     },
     {
     id: 30,
-    img: "images/First wine.jpg",
+    img: "images/First_wine.jpg",
     title: "Scuderia Italia Chianti 2012",
     category: "Drinks",
     price: 99,
@@ -241,7 +241,7 @@ const Products = [
     },
     {
     id: 31,
-    img: "images/Second wine.jpg",
+    img: "images/Second_wine.jpg",
     title: "Scuderia Italia 2011",
     category: "Drinks",
     price: 129,

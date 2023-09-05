@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./index.css";
 import Category from "./components/Category";
 import Cart from "./components/Cart";

@@ -375,12 +375,12 @@ li.dropdown {
   margin-right: 4em;
 }
 
-/* Setka blokov */
+/* Сетка сетка блоков  */
 .wrap_containers {
   display: flex;
 }
 
-/* Paneli (levaya i pravaya) */
+/* Панели (левая и правая) */
 .left_panel {
   float: left;
   background-color: black;
@@ -397,7 +397,7 @@ li.dropdown {
   width: 12%;
 }
 
-/* Menu kortochki_tovarov*/
+/* Меню карточки товаров */
 .item_image {
   cursor: pointer;
   display: flex;
@@ -441,17 +441,12 @@ li.dropdown {
 }
 
 /* Стили для модульного окна с описанием товаров */
-.background_description{
-  background-color: #555;
-  top: 100%;
-  left: 100%;
-}
 .description{
   position: fixed;
   top: 30%;
   left: 30%;
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: auto;
   display: flex;
   /* align-items: center;
   justify-content: center; */

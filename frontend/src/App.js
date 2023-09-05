@@ -20,6 +20,13 @@ import Profile from "./components/Profile";
 import Contacts from "./components/Contacts";
 
 const App = () => {
+  const [data, setData] = useState (null)
+
+  useEffect ( () => {
+  fetch('/api')
+  .then (response => response.json())
+  .then (response => setData(response.message) )
+  },[])
   const [cartItems, setCartItems] = useState([]); // Используем useState для хранения выбранных товаров
   const [totalPrice, setTotalPrice] = useState(0); // Добавляем состояние для хранения общей суммы заказа
   const addToCart = (product) => {

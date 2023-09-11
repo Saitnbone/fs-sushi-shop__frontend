@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./index.css";
+import BurgerMenu from "./components/BurgerMenu";
 import Category from "./components/Category";
 import Cart from "./components/Cart";
 import Autorization from "./components/Autorization";
@@ -49,6 +50,7 @@ const App = () => {
   return (
     <div className="main-container">
       <div className="navbar">
+        <span><BurgerMenu /></span>
         <ul class="navigation">
           <li class="categories menu">
             <a href="#h">Home</a>

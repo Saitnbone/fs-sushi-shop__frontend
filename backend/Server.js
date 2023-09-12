@@ -1,4 +1,4 @@
-require('dotenv').config() // Команда, чтобы сервер мог считывать информацию с файла 
+require('dotenv').config() // Команда, чтобы сервер мог считывать информацию с файла .env
 const express = require('express')
 
 const PORT = process.env.PORT || 3001
@@ -11,6 +11,6 @@ app.listen(PORT, ()=>{
 
 app.get('/api', (req, res)=>{
     res.json({
-        message: "Message from backend Server.js"
+        message: "Message from backend server.js"
     })
 })

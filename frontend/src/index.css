@@ -29,6 +29,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
  }
 }
+.main_container{
+  width: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -107,9 +110,6 @@ a:active {
                                         Бургер-меню(адаптивная навигационная панель)
 -----------------------------------------------------------------------------------------------------------------------------------
 */
-.burger_menu_icon{
-  display: none;
-}
 .burger_navbar{
   display: none;
 }
@@ -118,6 +118,7 @@ a:active {
   cursor: pointer;
   }
   .burger_navbar{
+    display: block;
   position: absolute;
   width: 30%;
   left: -100%; /*Изначальное положение корзины до нажатия на кнопку*/
@@ -420,46 +421,25 @@ li.dropdown {
 */
 .cart_shop {
   position: absolute;
+  overflow: hidden;
   width: 30%;
-  right: -100%; /*Изначальное положение корзины до нажатия на кнопку*/
+  right: -30%; /*Изначальное положение корзины до нажатия на кнопку*/
   height: 100vh;
   margin-top: 18px;
   background-color: black;
   transition: right 0.6s ease-in-out; /*Добавлена плавность появления с правой стороны*/
   z-index: 1000;
-}
-@media(max-width: 767px){.cart_shop {
-  position: absolute;
-  width: 30%;
-  right: -100%; /*Изначальное положение корзины до нажатия на кнопку*/
-  height: 100vh;
-  margin-top: 18px;
-  background-color: black;
-  transition: right 0.6s ease-in-out; /*Добавлена плавность появления с правой стороны*/
-  z-index: 1000;
- }
 }
 .cart-show {
   right: 0; /* Сдвигаем блок в видимую область экрана */
 }
-@media(max-width: 767px){.cart-show {
-  right: 0; /* Сдвигаем блок в видимую область экрана */
-  }
-}
+
 .horizontal_line_cart {
   border: none;
   border-top: 1px solid #695915;
   margin-top: 0.8em;
   margin-bottom: 0.9em;
   opacity: 0.5;
-}
-@media(max-width: 767px){.horizontal_line_cart {
-  border: none;
-  border-top: 1px solid #695915;
-  margin-top: 0.8em;
-  margin-bottom: 0.9em;
-  opacity: 0.5;
- }
 }
 .vertical_line_cart{
   border: none;
@@ -468,39 +448,20 @@ li.dropdown {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
-@media(max-width: 767px){.vertical_line_cart{
-  border: none;
-  border-left: 1px solid #e7d6c2;
-  opacity: 0.5;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
- }
-}
 .titles_and_prices{
   display: inline-flex;
   margin-left: 1.2em;
 }
-@media(max-width: 767px){.titles_and_prices{
-  display: inline-flex;
-  margin-left: 1.2em;
- }
-}
+
 .minus_item_button{
   cursor: pointer;
   transition: 500ms ease;
 }
-@media(max-width:767px){.minus_item_button{
-  cursor: pointer;
-  transition: 500ms ease;
- }
-}
+
 .minus_item_button:hover{
   opacity: 0.5;
 }
-@media(max-width: 767px){.minus_item_button:hover{
-  opacity: 0.5;
- }
-}
+
 .plus_item_button{
   cursor: pointer;
   transition: 500ms ease;
@@ -513,132 +474,75 @@ li.dropdown {
 .plus_item_button:hover{
   opacity: 0.5;
 }
-@media(max-width: 767px){.plus_item_button:hover{
-  opacity: 0.5;
- }
-}
+
 .close_button{
   margin-left: 0.8em;
   margin-top: 0.2em;
 }
-@media(max-width: 767px){.close_button{
-  margin-left: 0.8em;
-  margin-top: 0.2em;
-  }
-}
+
 .close_button_item{
   cursor: pointer;
   transition: 500ms ease;
 }
-@media(max-width: 767px){.close_button_item{
-  cursor: pointer;
-  transition: 500ms ease;
-  }
-}
+
 .close_button_item:hover{
   opacity: 0.5;
 }
-@media(max-width: 767px ){.close_button_item:hover{
-  opacity: 0.5;
- }
-}
+
 .title_items{
   margin-top: 0;
   margin-bottom: 1px;
   font-size: 0.9em;
 }
-@media(max-width: 767px){.title_items{
-  margin-top: 0;
-  margin-bottom: 1px;
-  font-size: 0.9em;
- }
-}
+
 .price_items{
   font-size: 0.8em;
 }
-@media(max-width: 767px){.price_items{
-  font-size: 0.8em;
- }
-}
+
 .cart_text{
   color: #e7d6c2;
 }
-@media(max-width: 767px){.cart_text{
-  color: #e7d6c2;
- }
-}
+
 .cart_shop>ul>li{
   color: #e7d6c2;
   font-size: 1.2em;
 }
-@media(max-width: 767px){.cart_shop>ul>li{
-  color: #e7d6c2;
-  font-size: 1.2em;
- } 
-}
+
 .block_with_items{
   height: 45%;
   margin-left: 20px;
   margin-top: 15px;
   overflow: auto;
 }
-@media(max-width: 767px){.block_with_items{
-  height: 45%;
-  margin-left: 20px;
-  margin-top: 15px;
-  overflow: auto;
- }
-}
+
 .block_with_items>ul{
   padding-left: 0;
 }
-@media(max-width: 768px){.block_with_items>ul{
-  padding-left: 0
-  }
-}
+
 .cart_position{
   color: #e7d6c2;
   margin-left: 1px;
 }
-@media(max-width: 767px){.cart_position{
-  color: #e7d6c2;
-  margin-left: 1px;
- }
-}
+
 .total_price{
   color: #e7d6c2;
 }
-@media(max-width: 767px){.total_price{
-  color: #e7d6c2;
- }
-}
+
 .total_price>p{
   margin-left: 20px;
 }
-@media(max-width: 767px){.total_price>p{
-  margin-left: 20px;
- }
-}
+
 .brief_information{
   margin-left: 0.8em;
   width: 35%;
 }
-@media (max-width: 767px){.brief_information{
-  margin-left: 0.8em;
-  width: 35%;
- }
-}
+
 .add_del_el{
   margin-left: 1em;
   margin-right: 1em;
   margin-top: 0.2em;
 }
-@media(max-width: 767px){.add_del_el{
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 0.2em;
- }
-}
+
 .cart_button_1{
   width: 80%;
   cursor: pointer;
@@ -652,21 +556,6 @@ li.dropdown {
   border: none;
   border-radius: 4px;
   transition: 500ms ease;
-}
-@media(max-width: 767px){.cart_button_1{
-  width: 80%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  background-color: #e7d6c2;
-  transition: 500ms ease;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  transition: 500ms ease;
- }
 }
 
 /* 

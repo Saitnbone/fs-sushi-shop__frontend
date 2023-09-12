@@ -48,7 +48,7 @@ const App = () => {
     return Products.filter((product) => product.category === category);
   };
   return (
-    <div className="main-container">
+    <div className="main_container">
       <div className="navbar">
         <span><BurgerMenu /></span>
         <ul class="navigation">

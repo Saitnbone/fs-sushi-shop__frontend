@@ -1,3 +1,4 @@
+require('dotenv').config() // Команда, чтобы сервер мог считывать информацию с файла 
 const express = require('express')
 
 const PORT = process.env.PORT || 3001

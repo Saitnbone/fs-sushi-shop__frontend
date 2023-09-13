@@ -1,13 +1,27 @@
 require('dotenv').config() // Команда, чтобы сервер мог считывать информацию с файла .env
 const express = require('express')
+const sequelize = require('./database/dbConfig')
 
 const port = process.env.PORT || 3001
 
 const app = express()
 
-app.listen(port, ()=>{
-    console.log(`Server is running on port ${port}`)
-})
+
+const start = async () =>{
+    try{
+        await sequelize.authenticate()
+        await sequelize.sync()
+        app.listen(port, ()=>{
+            console.log(`Server is running on port ${port}`)
+        })
+    } catch(err){
+        console.log(err)
+    }
+}
+
+start()
+
+
 
 app.get('/api', (req, res)=>{
     res.json({

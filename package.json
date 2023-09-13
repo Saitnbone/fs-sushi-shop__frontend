@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+      "start": " node backend/index.js"
   },
   "keywords": [],
   "author": "",

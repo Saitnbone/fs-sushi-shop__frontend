@@ -10,7 +10,7 @@ const BurgerMenu = ()=>{
     }
     return (
     <div className="burger_menu">
-        <AiOutlineMenu onClick={handelClickButton} className="burger_menu_icon" />
+        <AiOutlineMenu onClick={handelClickButton} className="burger_menu_button" />
         <div className={`burger_navbar ${showBurgerMenu ? 'burger_show_info' : ''}`}>
             <ul className="burger_menu_categories">
                 <li className="burger_menu_category">

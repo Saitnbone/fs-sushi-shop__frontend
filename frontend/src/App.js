@@ -50,8 +50,8 @@ const App = () => {
   return (
     <div className="main_container">
       <div className="navbar">
-        <span><BurgerMenu /></span>
         <ul class="navigation">
+          <li><span><BurgerMenu /></span></li>
           <li class="categories menu">
             <a href="#h">Home</a>
           </li>
@@ -68,7 +68,7 @@ const App = () => {
             <a href="#s_1">Sets</a>
           </li>
           <li class="categories dropdown menu">
-            <a href="#d" class="dropbtm">
+            <a href="#d" class="dropbtm menu">
               Drinks
             </a>
             <div class="dropdown-content">

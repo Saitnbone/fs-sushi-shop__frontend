@@ -22,6 +22,7 @@ module.exports = new Sequelize(
 */
 
 // Подключение к базе данных
+/*
 connection.connect((err)=>{
     if(err){
         console.error('Ошибка подключения к базе данных', err);
@@ -31,3 +32,4 @@ connection.connect((err)=>{
     }
     connection.end();
 })
+*/

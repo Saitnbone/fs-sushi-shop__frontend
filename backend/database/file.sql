@@ -7,3 +7,5 @@ CREATE TABLE products (
     categoty VARCHAR(100),
     price INT
 );
+
+INSERT INTO products VALUE( 1, “Hello”, “there”, 8) 

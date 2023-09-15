@@ -19,6 +19,8 @@ import Location from "./components/Location";
 import Languages from "./components/Languages";
 import Profile from "./components/Profile";
 import Contacts from "./components/Contacts";
+import {RegistrationPage} from './pages/AutorizationPage'
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   const [data, setData] = useState (null)
@@ -83,6 +85,10 @@ const App = () => {
             <span id="autorization">
               <Autorization />
             </span>
+            <p>If you don't have an account, then <a href="/registration">register</a> to get access to additional features</p>
+            <Routes>
+                <Route path="/registration" element={<RegistrationPage />}/>
+              </Routes>
           </li>
           <li>
             <span id="box">

@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { AiOutlineUser } from "react-icons/ai";
+import { Routes, Route, Link } from 'react-router-dom';
+
 
 const AutorizationForm=()=>{
   const [showInfo, setShowInfo] = useState(false) // состояние, которое будет определять, показывать ли блок с информацией
@@ -27,7 +29,9 @@ const AutorizationForm=()=>{
           <button type="submit">Entry</button>
         </div>
         <div className="horizontal_line_product"></div>
-        <div className="autorization_text"><p>If you don't have an account, then register to get access to additional features</p></div>
+        <div className="autorization_text">
+              <p>If you don't have an account, then <a href="/registration">register</a> to get access to additional features</p>
+          </div>
       </div>
     </div>
   </div>)

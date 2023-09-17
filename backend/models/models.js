@@ -5,7 +5,7 @@
 */ 
 
 
-const sequelize = require('./dbConfig')
+const sequelize = require('../db')
 const {DataTypes} = require('sequelize')
 
 const User = sequelize.define('user', { // Модель пользователя
@@ -32,7 +32,7 @@ const Products = sequelize.define('products', { // Модель для това�
     img: {type: DataTypes.STRING, allowNull: false}
 }) 
 
-const Category = sequelize.define('category', {
+const Category = sequelize.define('category_products', {
     id:{type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true}, 
     name:{type: DataTypes.STRING, unique: true, allowNull: false}
 })

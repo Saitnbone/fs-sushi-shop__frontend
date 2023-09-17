@@ -30,7 +30,7 @@ const AutorizationForm=()=>{
         </div>
         <div className="horizontal_line_product"></div>
         <div className="autorization_text">
-              <p>If you don't have an account, then <a href="/registration">register</a> to get access to additional features</p>
+              <p>If you don't have an account, then <Link to="/registration">register</Link> to get access to additional features</p>
           </div>
       </div>
     </div>

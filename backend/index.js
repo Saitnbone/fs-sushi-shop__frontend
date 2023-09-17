@@ -1,7 +1,7 @@
 require('dotenv').config() // Команда, чтобы сервер мог считывать информацию с файла .env
 const express = require('express')
-const sequelize = require('./database/dbConfig')
-
+const sequelize = require('./dbConfig')
+const models = require('./models/models')
 const port = process.env.PORT || 3001
 
 const app = express()

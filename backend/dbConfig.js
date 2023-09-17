@@ -1,4 +1,4 @@
-const mysql = require('mysql2')
+const mysql = require('mysql')
 const {Sequelize} = require('sequelize')
 
 module.exports = new Sequelize(
@@ -8,7 +8,7 @@ module.exports = new Sequelize(
     {
         dialect: 'mysql',
         host: process.env.DB_HOST, // Хост базы данных
-        // port: process.env.DB_PORT // Порт базы данных
+        port: process.env.DB_PORT // Порт базы данных
     }
     
 )

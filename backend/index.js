@@ -5,6 +5,7 @@ const models = require('./models/models')
 const port = process.env.PORT || 3001
 const cors = require('cors')
 const router = require('./routes/index')
+const errorHandler = require('./middleware/ErrorHandlingMiddleware')
 
 const app = express()
 app.use(cors())
@@ -14,6 +15,8 @@ app.get('/', (req, res)=>{
     res.status(200).json({message: 'Created by Creative fusion'})
 })
 
+// Хендлер обработки ошибок является замыкающим, поэтому его необходимо указывать после всех вызовов
+app.use(errorHandler)
 
 
 

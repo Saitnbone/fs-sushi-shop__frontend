@@ -3,7 +3,10 @@ class categoryController {
 
     }
     async getAll(req, res){
-        
+
+    }
+    async getOne(req, res){
+       
     }
 }
 

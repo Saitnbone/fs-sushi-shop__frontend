@@ -1,3 +1,5 @@
+const ApiError = require('../errors/apiErrors')
+
 class userController {
     async registration(req, res){
 
@@ -6,7 +8,11 @@ class userController {
 
     }
     async check(req,res){
-        res.json({message: 'Hello there'})
+        const {id} = req.query
+        res.json(id)
+        if(!id){
+           return next(ApiError.badRequest('Не задан ID'))
+        }
     }
 }
 

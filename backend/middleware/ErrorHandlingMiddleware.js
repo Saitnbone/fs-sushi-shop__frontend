@@ -6,3 +6,5 @@ module.exports = function(err, req, res, next){
     }
     return res.status(500).json({message: 'Usnexpected error'})
 }
+// next используется в данной функции для передачи информации в последующие middleware
+

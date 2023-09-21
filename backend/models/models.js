@@ -27,7 +27,7 @@ const CartProduct = sequelize.define('cart_product', { // Модель для э
 const Products = sequelize.define('products', { // Модель для товара 
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     title: {type: DataTypes.STRING, unique: true, allowNull: false}, 
-    category: {type: DataTypes.STRING, allowNull: false},
+    categoryId: {type: DataTypes.STRING, allowNull: false},
     price: {type: DataTypes.INTEGER, allowNull: false},
     img: {type: DataTypes.STRING, allowNull: false}
 }) 

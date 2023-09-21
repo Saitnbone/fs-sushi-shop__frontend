@@ -3,6 +3,13 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const {User, CartUser} = require('../models/models')
 
+const generateJwt =(id, name, email, role)=>{
+    return jwt.sign(
+        {id, name, email, role}, 
+        process.env.SECRET_KEY, {expiresIn: '24h'}
+        )
+}
+
 class userController {
     async registration(req, res){
         const {email, name, password, role} = req.body
@@ -16,10 +23,11 @@ class userController {
         const hashPassword = await bcrypt.hash(password, 5)
         const user = await User.create({email, name, role, password: hashPassword})
         const userCart = CartUser.create({userId: user.id})
-        const token = jwt.sign(
+        const token = generateJwt(user.id, user.name, user.email, user.role) /*jwt.sign(
             {id: user.id, name: user.name, email: user.email, role: user.role}, 
             process.env.SECRET_KEY, {expiresIn: '24h'}
             )
+            */
         return res.json({token})
     }
     async login(req,res){

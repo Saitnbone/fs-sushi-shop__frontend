@@ -1,6 +1,6 @@
 const ApiError = require('../errors/apiErrors')
-const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
+const bcrypt = require('bcrypt') // шифровальщик токена с информацией
+const jwt = require('jsonwebtoken') // Стандарт, который используется для формирования токена с информацией о пользователе
 const {User, CartUser} = require('../models/models')
 
 const generateJwt =(id, name, email, role)=>{
@@ -11,7 +11,7 @@ const generateJwt =(id, name, email, role)=>{
 }
 
 class userController {
-    async registration(req, res){
+    async registration(req, res, next){
         const {email, name, password, role} = req.body
         if(!email || !password){
             return  next(ApiError.badRequest("Wrong login or password"))
@@ -23,22 +23,25 @@ class userController {
         const hashPassword = await bcrypt.hash(password, 5)
         const user = await User.create({email, name, role, password: hashPassword})
         const userCart = CartUser.create({userId: user.id})
-        const token = generateJwt(user.id, user.name, user.email, user.role) /*jwt.sign(
-            {id: user.id, name: user.name, email: user.email, role: user.role}, 
-            process.env.SECRET_KEY, {expiresIn: '24h'}
-            )
-            */
+        const token = generateJwt(user.id, user.name, user.email, user.role) 
         return res.json({token})
     }
-    async login(req,res){
-
+    async login(req,res, next){
+        const {email, password} = req.body
+        const user = await User.findOne({where: {email}})
+        if(!user){
+            return next(ApiError.internal("The user with the specified email does not exist"))
+        }
+        let comparePassword = bcrypt.compareSync(password, user.password)
+        if(!comparePassword){
+            return next(ApiError.internal("Password is incorrect"))
+        }
+        const token = generateJwt(user.id, user.name, user.email, user.role)
+        return res.json({token})
     }
     async check(req, res, next){
-        const {id} = req.query
-        if(!id){
-           return next(ApiError.badRequest('Not found ID'))
-        }
-        res.json(id)
+        const token = generateJwt(req.user.id, req.user.email, req.user.name, req.user.role)
+        return res.json({token})
     }
 }
 

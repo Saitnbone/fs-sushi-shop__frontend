@@ -19,7 +19,7 @@ import Location from "./components/Location";
 import Languages from "./components/Languages";
 import Profile from "./components/Profile";
 import Contacts from "./components/Contacts";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter ,Route, Routes } from "react-router-dom";
 import RegistrationPage  from './pages/AutorizationPage'
 import Layout from "./components/Layout";
 
@@ -53,9 +53,6 @@ const App = () => {
   };
   return (
     <div className="main_container">
-      <Routes>
-        <Route path="/" element={Layout}></Route>
-      </Routes>
       <div className="navbar">
         <ul class="navigation">
           <li><span><BurgerMenu /></span></li>

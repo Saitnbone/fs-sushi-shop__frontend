@@ -13,6 +13,7 @@ import Facebook from "./Facebook";
 import Twitter from "./Twitter";
 import Github from "./GitHub";
 import MyForm from "./Reg_form";
+import BurgerMenu from "./BurgerMenu"
 
 const Layout = () => { 
     return(
@@ -54,7 +55,7 @@ const Layout = () => {
             </li>
             <li>
                 <span id="box">
-                <Cart cartItems={cartItems} totalPrice={totalPrice}/>
+                {/* <Cart {/* cartItems={cartItems} totalPrice={totalPrice}/> */}
                 </span>
                 </li>
             </ul>

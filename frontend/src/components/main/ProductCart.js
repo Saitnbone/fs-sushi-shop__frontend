@@ -1,5 +1,5 @@
 import React from "react";
-import Description from "./Description";
+import Description from "../Description";
 import { useState } from "react";
 
 // Компонент для карточки товара

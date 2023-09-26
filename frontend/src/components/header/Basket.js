@@ -1,14 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import CloseItemButton from "./Delete_item_button";
-import PlusItemButton from "./Plus_button_item";
-import MinusItemButton from "./Minus_button_item";
+import CloseItemButton from "../Delete_item_button";
+import PlusItemButton from "../Plus_button_item";
+import MinusItemButton from "../Minus_button_item";
 
 
 
 // Компонент Корзина 
-const Cart = ({cartItems, totalPrice})=>{
+const Basket = ({cartItems, totalPrice})=>{
   const [showInfo, setShowInfo] = useState(false) // добавим состояние, которое будет определять, показывать ли блок с информацией
   const handelClickButton = () =>{
     setShowInfo(!showInfo)}; // при каждом нажатии на кнопку изменяем значение showInfo на противоположное
@@ -57,4 +57,4 @@ const Cart = ({cartItems, totalPrice})=>{
     </div>
   )
 }
-export default Cart;
+export default Basket;

@@ -3,7 +3,7 @@ import {Routes, Route} from "react-router-dom"
 // import { authRoutes, publicRoutes} from "../routes";
 import MainPage from "../pages/MainPage";
 import { Context } from "../index";
-import AuthorizationPage from "../pages/AuthorizationPage";
+import AuthorizationPage from "../pages/AuthorizationPage/AuthorizationPage";
 import Product from "./Product";
 import Admin from "../pages/Admin";
 import BasketPage from "../pages/BasketPage";
@@ -23,7 +23,7 @@ const AppRouter = () =>{
         // Если пользователь не авторизован, отображаем маршруты для неавторизованных пользователей
         <>
         <Route path="/registration" element={<AuthorizationPage/>} />
-        <Route path="login" element={<AuthorizationPage/>}/>
+        <Route path="/login" element={<AuthorizationPage/>}/>
         <Route path="/product" element={<Product />}/>
         </>
       )}

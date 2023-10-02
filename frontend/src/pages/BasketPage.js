@@ -3,7 +3,7 @@ import React from "react";
 const BasketPage = () =>{
     return (
     <div className="basket_block">
-        Basket
+        <div className="block_with_basket"></div>
     </div>
     )
 }

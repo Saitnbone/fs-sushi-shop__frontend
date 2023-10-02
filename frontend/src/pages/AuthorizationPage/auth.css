@@ -1,0 +1,20 @@
+.auth_block{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+.heaader_auth_block{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+}
+.main_auth_block{
+    background-color: #e7d6c2;
+    width: 100%;
+    height: 70vh;
+}
+.footer_auth_block{
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+}

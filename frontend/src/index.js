@@ -2,7 +2,6 @@ import React, { createContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import UserStore from './store/UserStore';
 
@@ -11,14 +10,12 @@ export const Context = createContext(null)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Context.Provider value={{
-            user: new UserStore
-            }}>
-        <BrowserRouter  >
-            <App />
-        </BrowserRouter>
-        </Context.Provider>
-    </React.StrictMode>
+    <Context.Provider value={{
+        user: new UserStore() // Используйте оператор new для создания экземпляра UserStore
+    }}>
+        <App />
+    </Context.Provider>
+</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

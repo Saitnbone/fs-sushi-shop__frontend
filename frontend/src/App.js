@@ -1,14 +1,14 @@
 import React from "react";
-
 import "./index.css";
-import MainPage from "./pages/MainPage";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./components/AppRouter";
 
 
 const App = () => {
   return (
-    <>
-    <MainPage />
-    </>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter >
   )
 };
 

@@ -1,22 +1,34 @@
 import React, { useContext } from "react";
-import {Switch, Route, Redirect} from "react-router-dom"
-import { authRoutes } from "../routes";
-import { SHOP_ROUTE } from "../utils/consts";
+import {Routes, Route} from "react-router-dom"
+// import { authRoutes, publicRoutes} from "../routes";
+import MainPage from "../pages/MainPage";
 import { Context } from "../index";
+import AuthorizationPage from "../pages/AuthorizationPage";
+import Product from "./Product";
+import Admin from "../pages/Admin";
+import BasketPage from "../pages/BasketPage";
 
 const AppRouter = () =>{
-    const isAuth = false;
-    const {user} = useContext(Context)
+    const { user } = useContext(Context);
     return (
-        <Switch>
-            {user.isAuth && authRoutes.map((path, Component)=>{
-                <Route key={path} path={path} component={Component} exact/>
-            })}
-            {authRoutes.map((path, Component)=>{
-                <Route key={path} path={path} component={Component} exact/>
-            })}
-            <Redirect to={SHOP_ROUTE}/>
-        </Switch>
+        <Routes>
+            <Route path="/" element={<MainPage />} />
+            {user.isAuth ? (
+        // Если пользователь авторизован, отображаем маршруты для авторизованных пользователей
+        <>
+        <Route path="/admin" element={<Admin />}/>
+        <Route path="/basket" element={<BasketPage />}/>
+        </>
+      ) : (
+        // Если пользователь не авторизован, отображаем маршруты для неавторизованных пользователей
+        <>
+        <Route path="/registration" element={<AuthorizationPage/>} />
+        <Route path="login" element={<AuthorizationPage/>}/>
+        <Route path="/product" element={<Product />}/>
+        </>
+      )}
+      <Route path="*" element={<MainPage />} />
+    </Routes>
     )
 }
 

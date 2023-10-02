@@ -1,9 +1,9 @@
 import React from "react";
 
-const Authorization = () => { 
+const AuthorizationPage = () => { 
     return (
     <div>Hello world to this is second page</div>
     )
 }
 
-export default Authorization;
+export default AuthorizationPage;

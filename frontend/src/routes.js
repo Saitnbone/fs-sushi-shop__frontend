@@ -3,37 +3,45 @@
 */
 import Product from "./components/Product"
 import Admin from "./pages/Admin"
-import Authorization from "./pages/AutorizationPage"
-import Basket from "./pages/Basket"
-import Shop from "./pages/MainPage"
-import { ADMIN_ROUTE, BASKET_ROUTE, PRODUCT_ROUTE } from "./utils/consts"
+import AuthorizationPage from "./pages/AuthorizationPage"
+import BasketPage from "./pages/BasketPage"
+import MainPage from "./pages/MainPage"
+
+import { 
+    ADMIN_ROUTE, 
+    SHOP_ROUTE, 
+    BASKET_ROUTE, 
+    REGISTRATION_ROUTE, 
+    LOGIN_ROUTE, 
+    PRODUCT_ROUTE 
+} from "./utils/consts"
 
 export const authRoutes = [
     {
-        path: ADMIN_ROUTE,
+        path: "/admin",
         Component: Admin
     },
     {
-        path: BASKET_ROUTE, 
-        Component: Basket
+        path: "/basket", 
+        Component: BasketPage
     }
 ]
 
 export const publicRoutes = [
     {
-        path: SHOP_ROUTE,
-        Component: Shop
+        path: "/",
+        Component: MainPage
     }, 
     {
-        path: REGISTRATION_ROUTE, 
-        Component: Authorization
+        path: "/registration", 
+        Component: AuthorizationPage
     }, 
     {
-        path: LOGIN_ROUTE, 
-        Component: Authorization
+        path: "/login", 
+        Component: AuthorizationPage
     }, 
     {
-        path: PRODUCT_ROUTE + '/:id',
+        path: "/product"+ "/:id",
         Component: Product
     }
 ]

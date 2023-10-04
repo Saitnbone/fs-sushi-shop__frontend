@@ -143,17 +143,20 @@ const MainPage = () => {
           <div className="block_footer">
             <div class="common">
               <div>
-                <div className="footer_element"><Languages /> 
+                <div className="footer_element">
+                  <span className="icons"><Languages/></span> 
                   <p className="text_footer_element">Languages</p>
                 </div>
               </div>
               <div>
-                <div className="footer_element"><Profile /> 
+                <div className="footer_element">
+                  <span className="icons"><Profile/></span> 
                   <p className="text_footer_element">My profile</p>
                 </div>
               </div>
               <div>
-                <div className="footer_element"><Contacts /> 
+                <div className="footer_element">
+                  <span className="icons"><Contacts/></span> 
                   <p className="text_footer_element">Contacts</p>
                 </div>
               </div>
@@ -162,17 +165,20 @@ const MainPage = () => {
             <div class="social">
               <h3> JU Sushi and you</h3>
               <div>
-                <div className="footer_element"><Menu /> 
+                <div className="footer_element">
+                  <span className="icons"><Menu/></span> 
                   <p className="text_footer_element">Menu</p>
                 </div>
               </div>
               <div>
-                <div className="footer_element"><Help /> 
+                <div className="footer_element">
+                  <span className="icons"><Help/></span> 
                   <p className="text_footer_element">Help</p>
                 </div>
               </div>
               <div>
-                <div className="footer_element"><Location /> 
+                <div className="footer_element">
+                  <span className="icons"><Location/></span> 
                   <p className="text_footer_element">Location</p>
                 </div>
               </div>
@@ -188,16 +194,16 @@ const MainPage = () => {
                 <div class="images">
                   <div class="social-icons">
                     <p>
-                      <span>
+                      <span className="instagram_icon">
                         <Instagram />
                       </span>
-                      <span>
+                      <span className="facebook_icon">
                         <Facebook />
                       </span>
-                      <span>
+                      <span  className="twitter_icon">
                       < Twitter />
                       </span>
-                      <span>
+                      <span className="github_icon">
                         <Github />
                       </span>
                     </p>

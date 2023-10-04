@@ -1,20 +1,222 @@
+
+/* 
+___________________________________________________________________________________________
+
+                     Общие настройки страницы авторизации/регитсрации
+___________________________________________________________________________________________
+
+*/
 .auth_block{
     background-color: white;
     width: 100%;
     height: 100vh;
 }
-.heaader_auth_block{
+.auth_block_text{
+    color: #e7d6c2;
+}
+
+/* 
+___________________________________________________________________________________________
+
+                               Настройки для панели навигации
+___________________________________________________________________________________________
+
+*/
+
+.header_auth_block{
     background-color: black;
     width: 100%;
     height: 10vh;
 }
+.burger_navbar{
+    display: none;
+}
+.auth_burger_menu_icon{
+    color: #e7d6c2;
+    cursor: pointer;
+    
+}
+  .burger_navbar{
+      display: block;
+    position: absolute;
+    width: 30%;
+    left: -100%; /*Изначальное положение корзины до нажатия на кнопку*/
+    height: 100vh;
+    margin-top: 18px;
+    background-color: black;
+    transition: left 0.6s ease-in-out; /*Добавлена плавность появления с правой стороны*/
+    z-index: 1000;
+}
+.burger_show_info{
+    left: 0; /* Сдвигаем блок в видимую область экрана */
+}
+  
+
+/* 
+___________________________________________________________________________________________
+
+                                  Настройки для блока main 
+___________________________________________________________________________________________
+
+*/
+
 .main_auth_block{
     background-color: #e7d6c2;
     width: 100%;
     height: 70vh;
 }
+.auth_block_form{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 
+___________________________________________________________________________________________
+
+                                  Настройки для блока footer
+___________________________________________________________________________________________
+
+*/
+
 .footer_auth_block{
     background-color: black;
     width: 100%;
     height: 20vh;
 }
+.auth_block_footer_element{
+    display: inline-flex;
+    margin-bottom: 10px;
+} 
+.auth_block_text_footer_element{
+    font-family: "Noto Sans JP", sans-serif;
+    color:#e7d6c2;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 8px;
+    transition: 500ms ease;
+}
+.auth_block_icons{
+    color: #e7d6c2;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+.auth_block_github_icon{
+    color: #e7d6c2;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+.auth_block_github_icon:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.auth_block_facebook_icon{
+    color: #e7d6c2;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+.auth_block_facebook_icon:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+    z-index: 1;
+}
+.auth_block_twitter_icon{
+    color: #e7d6c2;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+.auth_block_twitter_icon:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+    z-index: 1;
+}
+.auth_block_instagram_icon{
+    color: #e7d6c2;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+.auth_block_instagram_icon:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+/* 
+___________________________________________________________________________________________
+
+                                  Настройки для блока footer
+___________________________________________________________________________________________
+
+*/
+.news_form_auth_block{
+    display: inline-flex;
+}
+.auth_blok_input_name{
+    width: 40%;
+}
+.auth_blok_input_email{
+    width: 60%;
+}
+.auth_block_input_name ::placeholder{
+    color: #e7d6c2;
+}
+.auth_blok_input_email ::placeholder{
+    color: #e7d6c2;
+}
+.auth_blok_input_name{
+    width: 45%;
+    border-bottom: 1px solid #e7d6c2; 
+    opacity: 0.5;
+}
+.auth_blok_input_email{
+    width: 100%;
+    margin-left: 25px;
+    border-bottom: 1px solid #e7d6c2;
+    opacity: 0.5;
+}
+#reg_form_auth_block {
+    margin-top: 20px;
+    font-size: 16px;
+} 
+#reg_form_auth_block input {
+    border: none;
+    width: 100%;
+    /* width: 60%; */
+    padding: 8px;
+    font-size: 16px;
+    /* border: 1px solid #252423; */
+    /* border-radius: 100px; */
+    margin-top: 4px;
+    color: #e7d6c2;
+    background-color: transparent; 
+    white-space: nowrap; 
+}
+#reg_form_auth_block button {
+    width: 30%;
+    height: 30%;
+    background-color: #e7d6c2;
+    margin-top: 15px;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 500ms ease;
+} 
+#reg_form_auth_block button:hover {
+    background-color: #e7d6c2;
+    transform: scale(1.1);
+    z-index: 1;
+}
+

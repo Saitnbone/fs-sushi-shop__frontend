@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { AiOutlineUser } from "react-icons/ai";
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const AutorizationForm=()=>{
@@ -11,7 +11,7 @@ const AutorizationForm=()=>{
   }
   return(
   <div>
-    <AiOutlineUser onClick={handelClickButton} className="button_basket" />
+   <AiOutlineUser onClick={handelClickButton} className="button_basket" />
     <div className={`cart_shop ${showInfo ? 'cart-show' : ''}`}>
       <h2 className="title">Autorization</h2>
       <div className="autorization_form">
@@ -26,7 +26,7 @@ const AutorizationForm=()=>{
           </div>
         </form>
         <div className="autorization_button" >
-          <button type="submit">Entry</button>
+        <Link to="/registration"><button type="submit">Entry</button></Link>
         </div>
         <div className="horizontal_line_product"></div>
         <div className="autorization_text">

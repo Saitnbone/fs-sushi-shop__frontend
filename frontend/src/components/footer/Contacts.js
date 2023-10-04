@@ -3,7 +3,7 @@ import React from "react";
 import {GrContact} from "react-icons/gr"
 
 const Contacts = () => {
-    return <GrContact className="icons"/>
+    return <GrContact/>
 }
 
 export default Contacts; 

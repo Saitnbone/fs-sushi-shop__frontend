@@ -3,7 +3,7 @@ import React from "react";
 import {AiOutlineGithub} from "react-icons/ai"
 
 const Github = () =>{
-    return <AiOutlineGithub onClick={() =>window.open("https://twitter.com")} className="github_icon"/>
+    return <AiOutlineGithub onClick={() =>window.open("https://twitter.com")}/>
 }
 
 export default Github;

@@ -2,7 +2,7 @@ import React from "react";
 import './auth.css'
 import { useState } from "react";
 import {AiOutlineMenu} from 'react-icons/ai'
-import BurgerMenu from "../../components/header/BurgerMenu";
+import AuthBurgerMenu from "./components/AuthBurgerMenu";
 import Languages from "../../components/footer/Languages";
 import Profile from "../../components/footer/Profile";
 import Contacts from "../../components/footer/Contacts";
@@ -14,23 +14,20 @@ import Facebook from "../../components/footer/Facebook";
 import Twitter from "../../components/footer/Twitter";
 import Github from "../../components/footer/GitHub";
 import AuthBlockForm from "./components/RegFormAuth";
-import AuthBurgerMenu from "./components/AuthBurgerMenu";
+
 
 
 const AuthorizationPage = () => { 
     return (
     <div className="auth_block">
       <header className="header_auth_block">
-        <div className="navbar">
+        <div className="auth_block_navbar">
           <ul>
             <li><span><AuthBurgerMenu/></span></li>
           </ul>
-          <ul>
-            <li></li>
-          </ul>
         </div>
       </header>
-      <main className="main_auth_block">
+      <main className="main_auth_block"> 
         <form className="auth_block_form">
           <div className="news_form">
             <div className="blok_input_name">
@@ -65,7 +62,7 @@ const AuthorizationPage = () => {
               </div>
             </div>
           </div>
-          <div class="vertical-line"></div>
+          <div class="auth_block_vertical_line"></div>
             <div class="social">
               <h3 className="auth_block_text"> JU Sushi and you</h3>
               <div>
@@ -87,7 +84,7 @@ const AuthorizationPage = () => {
                 </div>
               </div>
             </div>
-            <div class="vertical-line"></div>
+            <div class="auth_block_vertical_line"></div>
             <div class="social_network">
               <h3 className="auth_block_text">Stay tuned</h3>
               <p className="auth_block_text">
@@ -121,7 +118,7 @@ const AuthorizationPage = () => {
               </span>
             </div>
           </div>
-          <div class="horizontal-line"></div>
+          <div class="auth_block_horizontal_line"></div>
           <div className="rights">
             <p className="auth_block_text">All rights reserved &copy;</p>
             <p className="auth_block_text">Developed by Creative fusion</p>

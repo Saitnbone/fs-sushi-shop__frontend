@@ -16,12 +16,14 @@ const AppRouter = () =>{
             {user.isAuth ? (
         // Если пользователь авторизован, отображаем маршруты для авторизованных пользователей
         <>
-        <Route path="/admin" element={<Admin />}/>
-        <Route path="/basket" element={<BasketPage />}/>
+        
+        
         </>
       ) : (
         // Если пользователь не авторизован, отображаем маршруты для неавторизованных пользователей
         <>
+        <Route path="/admin" element={<Admin />}/>
+        <Route path="/basket" element={<BasketPage />}/>
         <Route path="/registration" element={<AuthorizationPage/>} />
         <Route path="/login" element={<AuthorizationPage/>}/>
         <Route path="/product" element={<Product />}/>

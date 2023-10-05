@@ -6,7 +6,7 @@ import { Context } from "../index";
 import AuthorizationPage from "../pages/AuthorizationPage/AuthorizationPage";
 import Product from "./Product";
 import Admin from "../pages/Admin";
-import BasketPage from "../pages/BasketPage";
+import BasketPage from "../pages/BasketPage/BasketPage";
 
 const AppRouter = () =>{
     const { user } = useContext(Context);

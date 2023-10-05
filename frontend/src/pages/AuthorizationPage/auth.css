@@ -6,6 +6,10 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________
 
 */
+p{
+    color: #e7d6c2;
+}
+
 .auth_block{
     background-color: white;
     width: 100%;
@@ -50,7 +54,7 @@ header{
     font-size: 2.1625em;
     transition: 500ms ease;
 }
-.burger_menu_button:hover{
+.auth_block_burger_menu_icon:hover{
     opacity: 0.5;
     transform: scale(1.1);
     z-index: 1;
@@ -90,12 +94,84 @@ ________________________________________________________________________________
 }
 .auth_block_form{
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 55%;
     background-color: black;
-    top: 50%;
+    border-radius: 3%;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
+}
+.auth_block_title{
+    color: #e7d6c2;
+    text-align: center;
+}
+.singin_login{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.singin_login span{
+    color: #e7d6c2;
+}
+.login{
+    margin-right: 0.65em;
+}
+.signin{
+    margin-left: 0.65em;
+}
+
+.auth_block_auth_form{
+    text-align: center;
+}
+.auth_block_name_input{
+    display: inline-block;
+    width: 50%;
+    margin-left: 25px;
+    border-bottom: 1px solid #e7d6c2;
+    opacity: 0.5;
+}
+.auth_block_auth_form ::placeholder{
+    color: #e7d6c2;
+}
+.auth_block_email_input{
+    display: inline-block;
+    width: 50%;
+    margin-left: 25px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #e7d6c2;
+    opacity: 0.5;
+}
+.auth_block_auth_form ::placeholder{
+    color: #e7d6c2;
+}
+.auth_block_auth_form input{
+    border: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 4px;
+    color: #e7d6c2;
+    background-color: transparent; 
+    white-space: nowrap;
+}
+
+.auth_block_form button {
+    width: 30%;
+    height: 30%;
+    background-color: #e7d6c2;
+    margin-top: 15px;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 500ms ease;
+} 
+.auth_block_form button:hover {
+    background-color: #e7d6c2;
+    transform: scale(1.1);
+    z-index: 1;
 }
 
 /* 
@@ -174,14 +250,6 @@ ________________________________________________________________________________
     transform: scale(1.2);
     z-index: 1;
 }
-
-/* 
-___________________________________________________________________________________________
-
-                                  Настройки для блока footer
-___________________________________________________________________________________________
-
-*/
 .auth_block_vertical_line{
     width: 1px;
     background-color: #e7d6c2;

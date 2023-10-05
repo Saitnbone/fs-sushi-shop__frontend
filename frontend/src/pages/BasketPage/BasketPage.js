@@ -1,9 +1,5 @@
 import React from "react";
-import './auth.css'
-import { useState } from "react";
-import {AiOutlineMenu} from 'react-icons/ai'
-import AuthBurgerMenu from "./components/AuthBurgerMenu";
-import AuthFormUsers from "./components/AuthFormUsers";
+import './basket.css'
 import Languages from "../../components/footer/Languages";
 import Profile from "../../components/footer/Profile";
 import Contacts from "../../components/footer/Contacts";
@@ -14,25 +10,17 @@ import Instagram from "../../components/footer/Instagram";
 import Facebook from "../../components/footer/Facebook";
 import Twitter from "../../components/footer/Twitter";
 import Github from "../../components/footer/GitHub";
-import NewsFormAuth from "./components/NewsFormAuth";
 
 
-
-const AuthorizationPage = () => { 
-    return (
-    <div className="auth_block">
-      <header className="header_auth_block">
-        <div className="auth_block_navbar">
-          <ul>
-            <li><span><AuthBurgerMenu/></span></li>
-          </ul>
-        </div>
+const BasketPage = () =>{
+  return (
+    <div className="basket_block">
+      <header>
+        <p>hello World</p>
       </header>
-      <main className="main_auth_block">
-        <AuthFormUsers/> 
-      </main>
-      <footer className="footer_auth_block">
-        <div className="block_footer">
+      <main></main>
+      <footer className="footer_basket_block">
+      <div className="block_footer">
           <div class="common">
             <div>
               <div className="auth_block_footer_element">
@@ -116,7 +104,7 @@ const AuthorizationPage = () => {
           </div>
       </footer>
     </div>
-    )
-}
+  )
+};
 
-export default AuthorizationPage;
+export default BasketPage;

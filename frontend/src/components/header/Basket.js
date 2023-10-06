@@ -4,6 +4,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import CloseItemButton from "../Delete_item_button";
 import PlusItemButton from "../Plus_button_item";
 import MinusItemButton from "../Minus_button_item";
+import { Link } from "react-router-dom";
 
 
 
@@ -52,7 +53,7 @@ const Basket = ({cartItems, totalPrice})=>{
               <p>Total Price: {totalPrice}$</p>
             )} {/* Отображаем общую сумму заказа */}
           </div>
-          <button className="cart_button_1">Go to Pay</button>
+          <Link to={'/basket'}><button className="cart_button_1">Go to Pay</button></Link>
       </div>
     </div>
   )

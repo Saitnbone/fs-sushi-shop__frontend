@@ -10,15 +10,20 @@ import Instagram from "../../components/footer/Instagram";
 import Facebook from "../../components/footer/Facebook";
 import Twitter from "../../components/footer/Twitter";
 import Github from "../../components/footer/GitHub";
-
+import BasketBlockForm from "./components/NewsFormBasket";
+import BasketBurgerMenu from "./components/BasketBurgerMenu";
 
 const BasketPage = () =>{
   return (
     <div className="basket_block">
-      <header>
-        <p>hello World</p>
+      <header className="header_basket_block">
+        <div className="basket_block_navbar">
+          <ul>
+            <li><span><BasketBurgerMenu/></span></li>
+          </ul>
+        </div>
       </header>
-      <main></main>
+      <main className="main_basket_block"></main>
       <footer className="footer_basket_block">
       <div className="block_footer">
           <div class="common">
@@ -93,7 +98,7 @@ const BasketPage = () =>{
               <h3 className="auth_block_text">Sign up to our newsletter</h3>
                 <p className="auth_block_text">Find out about the latest news and promotions through our newsletter.</p>
               <span id="reg_form_auth_block">
-                <NewsFormAuth/>
+                <BasketBlockForm/>
               </span>
             </div>
           </div>

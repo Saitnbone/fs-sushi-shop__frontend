@@ -15,6 +15,7 @@ import Facebook from "../../components/footer/Facebook";
 import Twitter from "../../components/footer/Twitter";
 import Github from "../../components/footer/GitHub";
 import NewsFormAuth from "./components/NewsFormAuth";
+import { Link } from "react-router-dom";
 
 
 
@@ -58,8 +59,8 @@ const AuthorizationPage = () => {
               <h3 className="auth_block_text"> JU Sushi and you</h3>
               <div>
                 <div className="auth_block_footer_element">
-                  <span className="auth_block_icons"><Menu/></span>
-                  <p className="auth_block_text_footer_element">Menu</p>
+                  <Link to={'/'}><span className="auth_block_icons"><Menu/></span></Link>
+                  <Link to={'/'}><p className="auth_block_text_footer_element">Menu</p></Link>
                 </div>
               </div>
               <div>

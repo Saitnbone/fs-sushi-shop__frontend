@@ -5,7 +5,7 @@ import MainPage from "../pages/MainPage";
 import { Context } from "../index";
 import AuthorizationPage from "../pages/AuthorizationPage/AuthorizationPage";
 import Product from "./Product";
-import Admin from "../pages/Admin";
+import Admin from "../pages/AdminPage/Admin";
 import BasketPage from "../pages/BasketPage/BasketPage";
 
 const AppRouter = () =>{

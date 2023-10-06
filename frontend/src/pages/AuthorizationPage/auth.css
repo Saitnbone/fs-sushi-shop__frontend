@@ -6,12 +6,9 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________
 
 */
-p{
-    color: #e7d6c2;
-}
 
 .auth_block{
-    background-color: white;
+    background-color: black;
     width: 100%;
     height: 100%;
 }
@@ -36,12 +33,19 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
-  }
+}
 
 .header_auth_block{
     background-color: black;
     width: 100%;
     height: 10vh;
+}
+.auth_block_navbar{
+    margin-top: 1em;
+}
+.auth_block_navbar ul{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .auth_block_burger_menu{
     display: block;

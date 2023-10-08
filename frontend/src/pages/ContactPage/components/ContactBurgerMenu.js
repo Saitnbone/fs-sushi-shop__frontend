@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 import {AiOutlineMenu} from 'react-icons/ai'
 
-const BasketBurgerMenu = ()=>{
+const ContactBurgerMenu = () =>{
     const[showBurgerMenu, setShowBurgerMenu] = useState(false)
     const handelClickButton = () =>{
         setShowBurgerMenu(!showBurgerMenu)
@@ -16,12 +16,11 @@ const BasketBurgerMenu = ()=>{
                 <li className=''><Link to={'/'}>Home Page</Link></li>
                 <li className=''><Link to={'/'}>Menu</Link></li>
                 <li className=''><Link to={'/registration'}>Authorization Page</Link></li>
-                <li className=''><Link to={'/contacts'}>Contacts</Link></li>
-                <li className=''><Link to={'/location'}>Location</Link></li>
+                <li className=''><Link to={'/location'}>Location Page</Link></li>
             </ul>
         </div>
     </div>
     )
 };
 
-export default BasketBurgerMenu;
+export default ContactBurgerMenu;

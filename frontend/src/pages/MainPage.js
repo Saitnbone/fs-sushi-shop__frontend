@@ -21,6 +21,7 @@ import Github from "../components/footer/GitHub";
 import Twitter from "../components/footer/Twitter";
 import MyForm from "../components/footer/Reg_form";
 import Products from "../components/ProductsData";
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
   const [cartItems, setCartItems] = useState([]); // Используем useState для хранения выбранных товаров
@@ -150,14 +151,14 @@ const MainPage = () => {
               </div>
               <div>
                 <div className="footer_element">
-                  <span className="icons"><Profile/></span> 
-                  <p className="text_footer_element">My profile</p>
+                  <Link to={'/registration'}><span className="icons"><Profile/></span></Link> 
+                  <Link to={'/registration'}><p className="text_footer_element">My profile</p></Link>
                 </div>
               </div>
               <div>
                 <div className="footer_element">
-                  <span className="icons"><Contacts/></span> 
-                  <p className="text_footer_element">Contacts</p>
+                  <Link to={'/contacts'}><span className="icons"><Contacts/></span></Link> 
+                  <Link to={'/contacts'}><p className="text_footer_element">Contacts</p></Link>
                 </div>
               </div>
             </div>
@@ -166,8 +167,8 @@ const MainPage = () => {
               <h3> JU Sushi and you</h3>
               <div>
                 <div className="footer_element">
-                  <span className="icons"><Menu/></span> 
-                  <p className="text_footer_element">Menu</p>
+                  <Link to={'/'}><span className="icons"><Menu/></span></Link> 
+                  <Link to={'/'}><p className="text_footer_element">Menu</p></Link>
                 </div>
               </div>
               <div>

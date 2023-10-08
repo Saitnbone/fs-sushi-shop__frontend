@@ -23,7 +23,11 @@ const BasketPage = () =>{
           </ul>
         </div>
       </header>
-      <main className="main_basket_block"></main>
+      <main className="main_basket_block">
+        <div className="basket_block_element">
+          <h2 className="title">Shopping Cart</h2>
+        </div>
+      </main>
       <footer className="footer_basket_block">
       <div className="block_footer">
           <div class="common">

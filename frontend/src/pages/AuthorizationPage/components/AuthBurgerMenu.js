@@ -17,6 +17,8 @@ export const AuthBurgerMenu = () => {
                 <li className=''><Link to={'/'}>Home Page</Link></li>
                 <li className=''><Link to={'/'}>Menu</Link></li>
                 <li className=''><Link to={'/basket'}>Basket</Link></li>
+                <li className=''><Link to={'/contacts'}>Contacts</Link></li>
+                <li className=''><Link to={'/location'}>Location</Link></li>
             </ul>
         </div>
     </div>

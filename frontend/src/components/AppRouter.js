@@ -5,8 +5,10 @@ import MainPage from "../pages/MainPage";
 import { Context } from "../index";
 import AuthorizationPage from "../pages/AuthorizationPage/AuthorizationPage";
 import Product from "./Product";
-import Admin from "../pages/AdminPage/Admin";
+import AdminPage from "../pages/AdminPage/AdminPage";
 import BasketPage from "../pages/BasketPage/BasketPage";
+import ContactPage from "../pages/ContactPage/ContactPage";
+import LocationPage from "../pages/LocationPage/LocationPage";
 
 const AppRouter = () =>{
     const { user } = useContext(Context);
@@ -22,7 +24,9 @@ const AppRouter = () =>{
       ) : (
         // Если пользователь не авторизован, отображаем маршруты для неавторизованных пользователей
         <>
-        <Route path="/admin" element={<Admin />}/>
+        <Route path="/location" element={<LocationPage />}/>
+        <Route path="/contacts" element={<ContactPage />}/>
+        <Route path="/admin" element={<AdminPage />}/>
         <Route path="/basket" element={<BasketPage />}/>
         <Route path="/registration" element={<AuthorizationPage/>} />
         <Route path="/login" element={<AuthorizationPage/>}/>

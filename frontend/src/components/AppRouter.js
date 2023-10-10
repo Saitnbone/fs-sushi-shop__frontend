@@ -8,7 +8,6 @@ import Product from "./Product";
 import AdminPage from "../pages/AdminPage/AdminPage";
 import BasketPage from "../pages/BasketPage/BasketPage";
 import ContactPage from "../pages/ContactPage/ContactPage";
-import LocationPage from "../pages/LocationPage/LocationPage";
 
 const AppRouter = () =>{
     const { user } = useContext(Context);
@@ -24,7 +23,6 @@ const AppRouter = () =>{
       ) : (
         // Если пользователь не авторизован, отображаем маршруты для неавторизованных пользователей
         <>
-        <Route path="/location" element={<LocationPage />}/>
         <Route path="/contacts" element={<ContactPage />}/>
         <Route path="/admin" element={<AdminPage />}/>
         <Route path="/basket" element={<BasketPage />}/>

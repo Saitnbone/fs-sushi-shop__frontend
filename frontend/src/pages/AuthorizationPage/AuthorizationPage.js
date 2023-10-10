@@ -65,14 +65,14 @@ const AuthorizationPage = () => {
               </div>
               <div>
                 <div className="auth_block_footer_element">
-                  <span className="auth_block_icons"><Help/></span> 
-                  <p className="auth_block_text_footer_element">Help</p>
+                <Link to={'/contacts'}><span className="auth_block_icons"><Help/></span></Link>  
+                <Link to={'/contacts'}><p className="auth_block_text_footer_element">Help</p></Link> 
                 </div>
               </div>
               <div>
                 <div className="auth_block_footer_element">
-                  <span className="auth_block_icons"><Location/></span> 
-                  <p className="auth_block_text_footer_element">Location</p>
+                  <Link to={'/contacts'}><span className="auth_block_icons"><Location/></span></Link> 
+                  <Link to={'/contacts'}><p className="auth_block_text_footer_element">Location</p></Link>
                 </div>
               </div>
             </div>

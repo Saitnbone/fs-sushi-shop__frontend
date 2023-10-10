@@ -173,14 +173,14 @@ const MainPage = () => {
               </div>
               <div>
                 <div className="footer_element">
-                  <span className="icons"><Help/></span> 
-                  <p className="text_footer_element">Help</p>
+                <Link to={'/contacts'}><span className="icons"><Help/></span></Link> 
+                <Link to={'/contacts'}><p className="text_footer_element">Help</p></Link>
                 </div>
               </div>
               <div>
                 <div className="footer_element">
-                  <span className="icons"><Location/></span> 
-                  <p className="text_footer_element">Location</p>
+                <Link to={'/contacts'}><span className="icons"><Location/></span></Link> 
+                <Link to={'/contacts'}><p className="text_footer_element">Location</p></Link>
                 </div>
               </div>
             </div>

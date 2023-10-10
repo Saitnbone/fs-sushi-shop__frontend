@@ -1,5 +1,7 @@
 import React from "react";
+import './admin.css'
 import AdminBurgerMenu from "./components/AdminBurgerMenu";
+import AddFormAdmin from "./components/AddFormAdmin";
 
 const AdminPage = () =>{
   return (
@@ -12,7 +14,7 @@ const AdminPage = () =>{
         </div>
       </header>
       <main className="main_admin_block">
-        <div></div>
+       <AddFormAdmin/>
       </main>
       <footer className="footer_admin_block">
         <div></div>

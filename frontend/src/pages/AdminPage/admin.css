@@ -6,8 +6,21 @@ ________________________________________________________________________________
 
 */
 
+body {
+    overflow-x: hidden;
+}
 .admin_block{
     background-color: black;
+}
+.contact_main_container{
+    background-color: black;
+
+}
+.contact_block_text{
+    color: #e7d6c2;
+}
+ul{
+    list-style: none;
 }
 
 /* 
@@ -18,8 +31,6 @@ ________________________________________________________________________________
 
 */
 
-.admin_header_block{
-}
 
 /* 
 ___________________________________________________________________________________________
@@ -33,6 +44,16 @@ ________________________________________________________________________________
     width: 100%;
     height: 70vh;
     background-color: #e7d6c2;
+}
+.admin_form_product_store{
+    position: absolute;
+    width: 30%;
+    height: 55%;
+    background-color: black;
+    border-radius: 3%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
 }
 
 /* 

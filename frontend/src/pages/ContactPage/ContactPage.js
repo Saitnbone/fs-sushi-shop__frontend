@@ -18,7 +18,7 @@ const ContactPage = () => {
         <main className='contact_main_container'>
           <div>
             <RestorantsMap />
-            <div className="contact_horizontal_line"></div>
+              <div className="contact_horizontal_line"></div>
             <SupportBlock /> 
           </div>       
         </main>

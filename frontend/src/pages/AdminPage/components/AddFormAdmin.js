@@ -22,27 +22,37 @@ const AddFormAdmin = () => {
       <div className="admin_form_product_store">
         <h2 className="title">Add new product to the store</h2>
         <form onSubmit={addNewProduct}>
-          <div>
-            <label>Title:</label>
+          <div className="admin_form_element">
+            <div>
+              <label className="admin_lable">Title:</label>
+            </div>
             <input type="text"></input>
           </div>
-          <div>
-            <lable>Category:</lable>
+          <div className="admin_form_element">
+            <div>
+              <lable className="admin_lable">Category:</lable>
+            </div>
             <input type="text"></input>
           </div>
-          <div>
-            <lable>Description</lable>
+          <div className="admin_form_element">
+            <div>
+               <lable className="admin_lable">Description</lable>
+            </div>
             <textarea></textarea>
           </div>
-          <div>
-            <lable>Price</lable>
+          <div className="admin_form_element">
+            <div>
+              <lable className="admin_lable">Price</lable>
+            </div>
             <input type="number"></input>
           </div>
-          <div>
-            <lable>Image</lable>
+          <div className="admin_form_element">
+            <div>
+              <lable className="admin_lable">Image:</lable>
+            </div>
             <input type="file" accept="image/*"></input>
           </div>
-
+          <button type="submit" className="admin_button_product">Add product</button>
         </form>
       </div>
     )

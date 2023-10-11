@@ -99,13 +99,14 @@ ________________________________________________________________________________
 .auth_block_form{
     position: absolute;
     width: 30%;
-    height: 55%;
+    height: auto;
     background-color: black;
     border-radius: 3%;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -45%);
 }
+
 .auth_block_title{
     color: #e7d6c2;
     text-align: center;
@@ -119,9 +120,15 @@ ________________________________________________________________________________
 }
 .login{
     margin-right: 0.65em;
+    cursor: pointer;
+}
+.login:hover{
+    border-bottom: #e7d6c2 2px;
+    z-index: 2;
 }
 .signin{
     margin-left: 0.65em;
+    cursor: pointer;
 }
 
 .auth_block_auth_form{
@@ -146,6 +153,14 @@ ________________________________________________________________________________
     border-bottom: 1px solid #e7d6c2;
     opacity: 0.5;
 }
+.auth_block_email_reg_input{
+    display: inline-block;
+    width: 50%;
+    margin-left: 25px;
+    margin-top: 1em;
+    border-bottom: 1px solid #e7d6c2;
+    opacity: 0.5;
+}
 .auth_block_auth_form ::placeholder{
     color: #e7d6c2;
 }
@@ -164,7 +179,8 @@ ________________________________________________________________________________
     width: 30%;
     height: 30%;
     background-color: #e7d6c2;
-    margin-top: 15px;
+    margin-top: 0.9em;
+    margin-bottom: 3em;
     color: black;
     padding: 10px 20px;
     border: none;

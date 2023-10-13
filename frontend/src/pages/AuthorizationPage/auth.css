@@ -121,14 +121,24 @@ ________________________________________________________________________________
 .login{
     margin-right: 0.65em;
     cursor: pointer;
+    transition: 500ms ease;
+    z-index: 2;
 }
 .login:hover{
-    border-bottom: #e7d6c2 2px;
-    z-index: 2;
+    opacity: 0.5;
+    transform: scale(1.2);
+    z-index: 1;
 }
 .signin{
     margin-left: 0.65em;
     cursor: pointer;
+    transition: 500ms ease;
+    z-index: 2;
+}
+.signin:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 .auth_block_auth_form{

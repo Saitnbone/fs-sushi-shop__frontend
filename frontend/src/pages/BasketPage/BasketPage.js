@@ -1,5 +1,7 @@
 import React from "react";
 import './basket.css'
+import BasketBurgerMenu from "./components/BasketBurgerMenu";
+import BasketBlockElement from "./components/BasketBlockElement";
 import Languages from "../../components/footer/Languages";
 import Profile from "../../components/footer/Profile";
 import Contacts from "../../components/footer/Contacts";
@@ -11,7 +13,7 @@ import Facebook from "../../components/footer/Facebook";
 import Twitter from "../../components/footer/Twitter";
 import Github from "../../components/footer/GitHub";
 import BasketBlockForm from "./components/NewsFormBasket";
-import BasketBurgerMenu from "./components/BasketBurgerMenu";
+
 
 const BasketPage = () =>{
   return (
@@ -24,9 +26,7 @@ const BasketPage = () =>{
         </div>
       </header>
       <main className="main_basket_block">
-        <div className="basket_block_element">
-          <h2 className="title">Shopping Cart</h2>
-        </div>
+        <BasketBlockElemen/>
       </main>
       <footer className="footer_basket_block">
       <div className="block_footer">

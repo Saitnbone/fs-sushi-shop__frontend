@@ -1,0 +1,194 @@
+/* 
+___________________________________________________________________________________________
+
+                     Общие настройки страницы авторизации/регитсрации
+___________________________________________________________________________________________
+
+*/
+body {
+    overflow-x: hidden;
+}
+
+.contact_main_container{
+    background-color: black;
+
+}
+.contact_block_text{
+    color: #e7d6c2;
+}
+ul{
+    list-style: none;
+}
+
+/* 
+___________________________________________________________________________________________
+
+                               Настройки для панели навигации
+___________________________________________________________________________________________
+
+*/
+
+header{
+    border-top: 0;
+    background-color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.contact_header_block{
+    background-color: black;
+    height: 10vh;
+}
+.contact_block_navbar{
+    margin-top: 1em;
+}
+.contact_block_navbar ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 
+___________________________________________________________________________________________
+
+                                  Настройки для блока main 
+___________________________________________________________________________________________
+
+*/
+
+.contact_main_container{
+    background-color: #e7d6c2;
+}
+.contact_main_blocks{
+    display: inline-flex;
+    width: 100%;
+}
+.contact_map_block{
+    margin-left: 5%;
+    margin-right: 2%;
+    background-color: white;
+    border-radius: 5%;
+    margin-top: 3em;
+    width: 40%;
+}
+.contact_vertical_line {
+    width: 1px;
+    background-color: black;
+    opacity: 0.5;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.contact_information_block{
+    background-color: black;
+    border-radius: 5%;
+    margin-top: 3em;
+    margin-left: 2%;
+    margin-right: 5%;
+    width: 40%;
+}
+.store_addresses li{
+    color: #e7d6c2;
+    margin: 1.5em; font-size: 1.2em;
+}
+.contact_horizontal_line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    border: none;
+    border-top: 1px solid black;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    opacity: 0.5;
+}
+.contact_block_icon_support{
+    font-size: 4.5em;
+
+}
+.contact_support_block{
+    display: inline-flex;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+.contact_block_message{
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-right: 4em;
+}
+.contact_block_support_information{
+   margin-right: 3em;
+}
+.contact_block_email{
+    display: inline-flex;
+    margin-left: 3em;
+}
+.contact_block_email span{
+    font-size: 2em;
+}
+.contact_block_email p{
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+.contact_block_tg_bot{
+    display: inline-flex;
+    margin-left: 3em;
+}
+.contact_block_tg_bot span{
+    font-size: 2.5em;
+}
+.contact_block_tg_bot p {
+    margin-left: 0.5em;
+}
+
+/* 
+___________________________________________________________________________________________
+
+                                  Настройки для блока footer
+___________________________________________________________________________________________
+
+*/
+.contact_footer_container{
+    background-color: black;
+}
+.contact_block_icons{
+    color: #e7d6c2;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+.contact_block_footer{
+    width: 100%;
+    display: inline-flex;
+}
+.contact_block_social{
+    text-align: center;
+    margin-left: 4em;
+    width: 40%;
+}
+.contact_block_text_footer_element{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.25em;
+    color:#e7d6c2;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 8px;
+}
+.contact_block_footer_element{
+    display: flex;
+    margin: 1em;
+}
+.contact_block_vertical_line{
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 1px;
+    background-color:#e7d6c2;
+    opacity: 0.5;
+}
+.contact_block_social_network{
+    width: 40%;
+}

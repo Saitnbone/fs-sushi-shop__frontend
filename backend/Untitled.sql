@@ -1,4 +1,0 @@
-SHOW INDEXES FROM users;
-ALTER TABLE users DROP INDEX email, DROP INDEX email_2, DROP INDEX email_3, DROP INDEX email_4, DROP INDEX email_5, DROP INDEX email_6,
-DROP INDEX email_7, DROP INDEX email_8, DROP INDEX email_9, DROP INDEX email_10, DROP INDEX email_11, DROP INDEX email_12, DROP INDEX email_13,
-DROP INDEX email_14;

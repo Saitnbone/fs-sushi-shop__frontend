@@ -1,3 +1,0 @@
-CREATE DATABASE shopBd;
-USE shopBd;
-
